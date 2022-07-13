@@ -1,27 +1,49 @@
-import React from 'react'
-import { View, Text, Image, Pressable} from 'react-native'
+import React, { useState } from 'react'
+import { View, Text, Image, TouchableOpacity, Alert, Pressable} from 'react-native'
 
 import image from '../../constants/images';
 
 import styles from './style'
 
-const index = () => {
+const index = ({item,index, deleteTask, editText}) => {
+
+  const deleteAlert = () => {
+    Alert.alert(
+      "Delete",
+      "Are you sure you want to delete?",
+      [
+        {
+          text: "Cancel",
+          onPress: () => console.log("Cancel"),
+          style: "cancel"
+        },
+        { text: "OK", onPress: () => deleteTask(item) }
+      ]
+    );
+  }
+  
+  
+
   return (
     <View style={styles.Task}>
         <View style={{backgroundColor: '#3c305e', borderRadius: 10,padding:10}}>
-            <Text style={[styles.MainHead, {marginTop: 0}]}>1</Text>
+            <Text style={[styles.TaskName, {marginTop: 0}]}>{index+1}</Text>
         </View>
         <View style={styles.TextPart}>
-            <Text style={[styles.MainHead, {marginTop: 0}]}>Task1</Text>
-            <Pressable onPress={()=> ('')}>
+          <Pressable onPress={() => editText(item,index)
+
+
+        }>
+            <Text style={[styles.TaskName, {marginTop: 0}]}>{item.text}</Text>
+          </Pressable>
+            <TouchableOpacity onPress={()=> deleteAlert()}>
               <Image
                 source={image.Delete}
-                style={styles.deleteImg}
+                style={styles.DeleteImg}
               />
-            </Pressable>
+            </TouchableOpacity>
         </View>
     </View>
   )
 }
-
 export default index

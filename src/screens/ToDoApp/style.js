@@ -12,5 +12,9 @@ const style= StyleSheet.create({
         paddingHorizontal: 20,
         marginTop: 15,
     },
+    AddCompnt: {
+        height:80, 
+        backgroundColor:"#1e1530", 
+        justifyContent:"center"}
 }) 
 export default style

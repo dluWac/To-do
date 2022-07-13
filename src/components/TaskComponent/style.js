@@ -5,12 +5,12 @@ const style = StyleSheet.create({
     Task:{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 20,
+        paddingHorizontal: 22,
         marginTop: 20,
       },
-    MainHead: {
+    TaskName: {
         color: 'white',
-        fontSize: 30,
+        fontSize: 22,
         fontWeight: '400',
         paddingHorizontal: 10,
         marginTop: 15,
@@ -24,11 +24,10 @@ const style = StyleSheet.create({
         borderRadius: 10,
         marginLeft: 10,
         
-        
       },
-      deleteImg: {
-        height: 40, 
-        width: 40,
+    DeleteImg: {
+        height: 30, 
+        width: 30,
         tintColor: 'white',
 
     },
