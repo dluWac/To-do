@@ -45,7 +45,7 @@ const index = ({
         setTask('');
         Keyboard.dismiss();
       } else {
-        console.log('null valueeee');
+        // console.log('null valueeee');
 
         const payload = {
           id: Math.random(),

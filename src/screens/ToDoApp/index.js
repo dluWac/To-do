@@ -20,10 +20,6 @@ const index = ({}) => {
   const [task, setTask] = useState('');
   const [isEditId, setIsEditId] = useState(null);
   
-
-
-
-  
   const deleteTask = data => {
     const filterData = listArray.filter(item => {
       return data?.id != item?.id;
@@ -33,7 +29,7 @@ const index = ({}) => {
   const editText = (item, index, data, ) => {
     setTask(item.text);
     setIsEditId(item?.id);
-  
+    
   };
   return (
     <View style={style.container}>
@@ -43,7 +39,7 @@ const index = ({}) => {
           data={listArray}
           keyExtractor={(item, index) => item?.id?.toString()}
           renderItem={({item, index}) => (
-            <Task
+            <Task 
               item={item}
               index={index}
               setListArray={setListArray}
