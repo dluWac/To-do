@@ -8,11 +8,13 @@ import Navigator from './src/navigation/navigation'
 const App = () => {
   LogBox.ignoreAllLogs()
   return (
+    <React.StrictMode >
     <SafeAreaView style={{flex:1}}>
       {/* <Counter /> */}
       {/* <ToDo /> */} 
       <Navigator/>
     </SafeAreaView>
+    </React.StrictMode>
   )
 }
 

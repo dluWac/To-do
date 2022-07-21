@@ -8,7 +8,7 @@ const index = ({item, onPressedValue, }) => {
   return (
     <View style={{}}>
         <TouchableOpacity style={style.NumStyle} onPress={() => onPressedValue(item)}>
-          <Text style={style.KeyPad(item)}>{item.number == '*' ? "X" : item.number }</Text>
+          <Text style={style.KeyPad(item)}>{item.number == ' * ' ? "X" : item.number }</Text>
         </TouchableOpacity>
     </View>
   )

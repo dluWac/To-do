@@ -7,8 +7,8 @@ const style = StyleSheet.create({
       },
       KeyBoard: {
         backgroundColor: '#292d36',
-        borderTopEndRadius: 30,
-        borderTopStartRadius: 30,
+        borderTopEndRadius: 50,
+        borderTopStartRadius: 50,
         // justifyContent: 'center',
         // alignItems: 'center',
         flexDirection: 'row',

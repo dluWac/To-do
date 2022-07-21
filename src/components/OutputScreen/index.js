@@ -13,7 +13,7 @@ const index =({ pressedValue, Answer,}) =>{
                     <Text style={style.Eqtn} >{pressedValue}</Text>
                 </View>
                 <View style={style.Answer}>
-                    <Text style={{...style.AnswerTxt,fontSize: Answer ? 40 : 0 }}>{Answer}</Text>
+                   {Answer ?  <Text style={style.AnswerTxt}>{Answer}</Text> : null }
                 </View>
             </View>
             

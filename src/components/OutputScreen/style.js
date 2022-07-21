@@ -7,7 +7,8 @@ const style = StyleSheet.create({
   },
   Screen: {
     alignItems: 'flex-end',
-    top: 30
+    top: 30,
+    marginRight: 30
     
   },
   Header: {

@@ -8,17 +8,18 @@ const constants = {
     },
     {
       id: 2,
-      number: '+/-',
-      Colr: '#26d4b5'
+      number: ' +/- ',
+      Colr: '#26d4b5',
+      type: 'valChang',
     },
     {
       id: 3,
-      number: '%',
+      number: ' % ',
       Colr: '#26d4b5'
     },
     {
       id: 4,
-      number: '/',
+      number: ' / ',
       Colr: '#f06868',
       
     },
@@ -36,7 +37,7 @@ const constants = {
     },
     {
       id: 8,
-      number: '*',
+      number: ' * ',
       Colr: '#f06868'
     },
     {
@@ -53,7 +54,7 @@ const constants = {
     },
     {
       id: 16,
-      number: '-',
+      number: ' - ',
       Colr: '#f06868'
     },
     {
@@ -70,7 +71,7 @@ const constants = {
     },
     {
       id: 20,
-      number: '+',
+      number: ' + ',
       Colr: '#f06868'
     },
     {
@@ -83,7 +84,7 @@ const constants = {
     },
     {
       id: 129,
-      number: '.',
+      number: ' . ',
     },
     {
       id: 202,
